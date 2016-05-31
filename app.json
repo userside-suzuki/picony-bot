@@ -1,30 +1,18 @@
 {
   "name": "picony-bot",
   "description": "",
-  "scripts": {
-  },
+  "addons": [
+    "fixie:tricycle"
+  ],
   "env": {
     "LINE_CHANNEL_ID": {
-      "required": true
-    },
-    "LINE_CHANNEL_MID": {
-      "required": true
+      "description": ""
     },
     "LINE_CHANNEL_SECRET": {
-      "required": true
+      "description": ""
+    },
+    "LINE_CHANNEL_MID": {
+      "description": ""
     }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1
-    }
-  },
-  "addons": [
-    "fixie"
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/php"
-    }
-  ]
+  }
 }
